@@ -2,11 +2,11 @@
 ## Installation
 
 ```bash
-git clone https://github.com/jdruper/chb.git
+git clone https://github.com/jdruper/chb-web.git
  ```
  
  ```bash
-cd chb
+cd chb-web
  ```
  
  ```bash
