@@ -1,13 +1,6 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 1rem;
-
-  &__brand {
-    display: flex;
-    align-items: center;
-  }
+  width: 100%;
+  padding-bottom: 0;
 
   &__logo-img {
     width: 30%;
@@ -15,28 +8,86 @@
     margin-right: 0.5rem;
   }
 
-  &__logo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  &__logo-text--green {
+    font-size: 2.25rem;
+    height: 2.5rem;
+  }
+}
 
-    &--green {
-      color: $primary;
-      font-family: $header-font-family;
-      font-size: 2.25rem;
-      height: 2.5rem;
-    }
+.hero {
+  height: 80vh;
 
-    &--yellow {
-      color: $accent;
-      font-family: $body-font-family;
-      text-transform: uppercase;
-      font-size: 1.5rem;
-      letter-spacing: 0.05em;
-    }
+  &__text-main {
+    font-size: 3rem;
   }
 
-  &__hamburger {
-    font-size: 2rem;
+  &__text-secondary {
+    width: 90%;
+    letter-spacing: 0.15em;
+  }
+}
+
+.social {
+  &__icon {
+    font-size: 3rem;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      color: $accent !important;
+    }
+  }
+}
+
+.foto-comunidad {
+  background-image: url("../images/foto-comunidad.jpg");
+  width: 69%;
+  height: 80%;
+  background-position: top;
+  background-size: cover;
+  border-radius: 9px;
+}
+
+.chb-button {
+  width: 50%;
+  background-color: $background;
+  border: $accent 3px solid;
+  border-radius: 9px;
+  padding: 15px 10px;
+  font-family: $body-font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $accent;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent;
+    color: $background;
+    border-color: $background;
+  }
+}
+
+@media (min-width: 62rem) {
+  .header {
+    &__menu {
+      display: flex;
+      width: 50%;
+    }
+
+    &__menu-items {
+      width: 100%;
+
+      & a {
+        color: $text;
+        text-decoration: none;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
   }
 }

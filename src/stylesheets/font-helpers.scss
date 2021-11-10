@@ -1,0 +1,41 @@
+.header-primary {
+  font-family: $header-font-family;
+}
+
+.header-accent {
+  font-family: $body-font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.color-accent {
+  color: $accent;
+}
+
+.color-primary {
+  color: $primary !important;
+}
+
+.color-grey {
+  color: $grey;
+}
+
+.font-xxl {
+  font-size: 2.5rem;
+}
+
+.font-xl {
+  font-size: 2rem;
+}
+
+.font-lg {
+  font-size: 1.5rem;
+}
+
+.font-md {
+  font-size: 1.25rem;
+}
+
+.font-sm {
+  font-size: 0.85rem;
+}

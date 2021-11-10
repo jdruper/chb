@@ -8,20 +8,65 @@
       content="Comunidad Hierba Buena es una Asociación Sin Fines de Lucro, una Comunidad Intencional y una Eco Aldea en formación."
     />
   </head>
-  <body>
-    <header class="header">
-      <div class="header__brand">
+  <body class="main-container margin-center">
+    <header class="header flex align-center padding-1 justify-space-between">
+      <div class="header__brand flex align-center">
         <img
           src="images/solo_logo_colocho_peq.png"
           alt="Logo Comunidad Hierba Buena"
           class="header__logo-img"
         />
-        <div class="header__logo-text">
-          <span class="header__logo-text--green">Hierba Buena</span
-          ><span class="header__logo-text--yellow">Comunidad</span>
+        <div class="flex flex-column justify-center">
+          <span class="header-primary color-primary header__logo-text--green"
+            >Hierba Buena</span
+          ><span class="header-accent color-accent font-lg">Comunidad</span>
         </div>
       </div>
-      <i class="fas fa-bars header__hamburger"></i>
+      <i class="fas fa-bars mobile-only font-xl"></i>
+      <!-- mobile only -->
+      <nav class="header__menu desktop-only">
+        <ul class="header__menu-items flex justify-space-evenly font-md">
+          <li><a href="#" class="color-primary">Inicio</a></li>
+          <li><a href="#">Qui&eacute;nes Somos</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
+      <section class="hero flex flex-column-mobile justify-space-between padding-1 flex-wrap-desktop align-center">
+        <div class="hero__text-contaniner flex flex-column flex-1">
+          <div class="hero__text-main font-xxl margin-bottom-1">
+            Bienvenide a nuestro
+            <span class="color-primary">experimento social.</span>
+          </div>
+          <div class="hero__text-secondary header-accent color-grey">
+            Inspirate con nosotres y contectate con el mundo de las ecoaldeas en
+            Costa Rica.
+          </div>
+          <button class="chb-button">Ingresar</button>
+        </div>
+        <div class="foto-comunidad desktop-only">
+        </div>
+      <div class="social flex flex-column align-end width-100 align-self-end margin-bottom-sm">
+        <div class="flex margin-bottom-sm">
+          <a href="https://www.facebook.com/hierbabuenacomunidad/" target="_blank">
+          <i
+            class="
+              fab
+              fa-facebook-square
+              social__icon
+              color-primary
+              margin-right-sm
+            "
+          ></i>
+        </a>
+        <a href="https://www.instagram.com/comunidad_hierba_buena/" target="_blank">
+          <i class="fab fa-instagram social__icon color-primary"></i>
+        </a>
+        </div>
+        <div class="color-grey header-accent font-sm">
+          Comunidad Hierba Buena 2021
+        </div>
+      </section>
   </body>
 </html>

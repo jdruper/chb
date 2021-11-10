@@ -1,9 +1,12 @@
-// Add your styles here
+// Style Base
 @import "reset";
 @import "fonts";
 @import "colors";
 @import "theme";
-@import "index";
+@import "flex-helpers";
+@import "font-helpers";
+@import "box-model-helpers";
+@import "query-helpers";
 
 html {
   box-sizing: border-box;
@@ -13,4 +16,18 @@ html {
 body {
   font-family: $body-font-family;
   color: $text;
+  background-image: url('../images/round.png');
 }
+
+.main-container {
+  max-width: 95%;
+}
+
+@media (min-width: 36rem) {
+  .main-container {
+    max-width: 80%;
+  }
+}
+
+// Page Specific
+@import "index";
