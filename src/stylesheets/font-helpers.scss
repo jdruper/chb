@@ -9,7 +9,7 @@
 }
 
 .color-accent {
-  color: $accent;
+  color: $accent !important;
 }
 
 .color-primary {
@@ -18,6 +18,10 @@
 
 .color-grey {
   color: $grey;
+}
+
+.color-white {
+  color: $white;
 }
 
 .font-xxl {

@@ -3,14 +3,28 @@
   padding-bottom: 0;
 
   &__logo-img {
-    width: 30%;
-    height: 30%;
+    width: 5rem;
     margin-right: 0.5rem;
   }
 
   &__logo-text--green {
     font-size: 2.25rem;
     height: 2.5rem;
+  }
+
+  &__menu-items {
+    width: 100%;
+    height: 100%;
+
+    & a {
+      color: $white;
+      text-decoration: none;
+      transition: color 0.3s ease-in;
+
+      &:hover {
+        color: $primary;
+      }
+    }
   }
 }
 
@@ -69,23 +83,45 @@
   }
 }
 
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  background-color: $text;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.mobile-menu-display {
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+}
+
+.icon {
+  width: 3rem;
+}
+
 @media (min-width: 62rem) {
   .header {
+    &__logo-img {
+      width: 6rem;
+    }
+
     &__menu {
       display: flex;
       width: 50%;
     }
 
     &__menu-items {
-      width: 100%;
-
       & a {
         color: $text;
-        text-decoration: none;
-        transition: color 0.3s ease-in;
 
         &:hover {
-          color: $accent;
+          color: $accent !important;
         }
       }
     }
