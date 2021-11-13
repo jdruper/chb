@@ -16,18 +16,31 @@ html {
 body {
   font-family: $body-font-family;
   color: $text;
-  background-image: url('../images/round.png');
+  background-image: url("../images/round.png");
+}
+
+.dark {
+  background-color: $text;
+  background-image: none;
+  color: $white;
 }
 
 .main-container {
   max-width: 95%;
+  height: 100vh;
 }
 
 @media (min-width: 36rem) {
   .main-container {
     max-width: 80%;
+
+    &--dark {
+      background-color: $text !important;
+      background-image: none;
+    }
   }
 }
 
 // Page Specific
 @import "index";
+@import "contacto";

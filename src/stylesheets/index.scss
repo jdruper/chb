@@ -63,23 +63,24 @@
 
 .chb-button {
   width: 50%;
-  background-color: $background;
-  border: $accent 3px solid;
+  background-color: $accent;
+  border: $background 3px solid;
   border-radius: 9px;
   padding: 15px 10px;
   font-family: $body-font-family;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: $accent;
+  color: $text;
+  font-weight: 800;
   font-size: 1.2rem;
   margin-top: 2rem;
   transition: all 0.3s ease-out;
   cursor: pointer;
 
   &:hover {
-    background-color: $accent;
-    color: $background;
-    border-color: $background;
+    background-color: $background;
+    color: $accent;
+    border-color: $accent;
   }
 }
 
